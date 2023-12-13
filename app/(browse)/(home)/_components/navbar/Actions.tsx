@@ -21,7 +21,7 @@ const Actions = async () => {
                     <span className="hidden lg:block">Dashboard</span>
                 </Link>
             </Button>
-            <UserButton/>
+            <UserButton afterSignOutUrl='/'/>
         </div>
     )}
     </div>
