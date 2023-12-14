@@ -7,7 +7,7 @@ import { useMediaQuery } from "usehooks-ts";
 interface ContainerProps {
   children: React.ReactNode;
 }
-const container = ({ children }: ContainerProps) => {
+const Container = ({ children }: ContainerProps) => {
   const matches = useMediaQuery("(max-width: 1024px)");
   const { collapsed, onCollapse, onExpand } = useSideBar((state) => state);
   useEffect(() => {
@@ -26,4 +26,4 @@ const container = ({ children }: ContainerProps) => {
   );
 };
 
-export default container;
+export default Container;
