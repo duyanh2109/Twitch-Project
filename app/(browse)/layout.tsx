@@ -8,7 +8,7 @@ const BrowseLayout = ({ children }: { children: React.ReactNode }) => {
     <>
       <Navbar />
       <div className="flex h-full pt-20">
-        <Suspense fallback={<SideBarSkeleton/>}>
+        <Suspense fallback={<SideBarSkeleton />}>
           <Sidebar />
         </Suspense>
 
