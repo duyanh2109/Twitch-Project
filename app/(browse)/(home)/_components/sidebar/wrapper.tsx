@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { ToggleSkeleton } from "./toggle";
 import { RecommendedSkeleton } from "./Recommended";
+import { FollowingSkeleton } from "./Following";
 interface WrapperProps {
   children: React.ReactNode;
 }
@@ -23,6 +24,7 @@ const Wrapper: React.FC<WrapperProps> = ({ children }) => {
         )}
       >
         <ToggleSkeleton />
+        <FollowingSkeleton />
         <RecommendedSkeleton />
       </aside>
     );
