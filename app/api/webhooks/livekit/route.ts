@@ -1,6 +1,5 @@
 import { headers } from "next/headers";
 import { WebhookReceiver } from "livekit-server-sdk";
-
 import { db } from "@/lib/db";
 
 const receiver = new WebhookReceiver(
@@ -28,6 +27,7 @@ export async function POST(req: Request) {
         isLive: true,
       },
     });
+    return new Response("Succesfull update live status", { status: 200 });
   }
 
   if (event.event === "ingress_ended") {
@@ -39,5 +39,6 @@ export async function POST(req: Request) {
         isLive: false,
       },
     });
+    return new Response("Succesfull update live status", { status: 200 });
   }
 }
