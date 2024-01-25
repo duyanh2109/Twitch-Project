@@ -41,4 +41,6 @@ export async function POST(req: Request) {
     });
     return new Response("Succesfull update live status", { status: 200 });
   }
+
+  return new Response("Something happen but i dont wanna cover it yet", { status: 200 });
 }
