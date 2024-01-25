@@ -15,7 +15,7 @@ interface NavItemProps {
   isActive: boolean;
 }
 
-const NavItem = ({ label, key, icon: Icon, href, isActive }: NavItemProps) => {
+const NavItem = ({ label,icon: Icon, href, isActive }: NavItemProps) => {
   const { collapsed } = useCreatorSideBar((state) => state);
   return (
     <Button
